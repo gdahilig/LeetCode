@@ -17,6 +17,7 @@ public class ListNode {
         self.next = nil
     }
 }
+typealias MergeFunction = (_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
 
 class MergeTwoSortedLists {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
@@ -71,6 +72,52 @@ class MergeTwoSortedLists {
         return merged
     }
     
+    // LeetCode solution with 122s execution time
+    func mergeTwoLists_16ms(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var head = ListNode(0)
+        var curL1 = l1
+        var curL2 = l2
+        var curr = head
+        while curL1 != nil || curL2 != nil {
+            var num1 = curL1?.val ?? Int.max
+            var num2 = curL2?.val ?? Int.max
+            if num1 < num2 {
+                curr.next = ListNode(num1)
+                curL1 = curL1?.next
+            } else {
+                curr.next = ListNode(num2)
+                curL2 = curL2?.next
+            }
+            curr = curr.next!
+        }
+        return head.next
+    }
+    
+    // LeetCode solution with 12ms execution time
+    func mergeTwoLists_12ms(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var head = ListNode(0)
+        var curL1 = l1
+        var curL2 = l2
+        var curr = head
+        while let cl1 = curL1, let cl2 = curL2 {
+            if cl1.val < cl2.val {
+                curr.next = ListNode(cl1.val)
+                curL1 = cl1.next
+            } else {
+                curr.next = ListNode(cl2.val)
+                curL2 = cl2.next
+            }
+            curr = curr.next!
+        }
+        if curL1 != nil {
+            curr.next = curL1
+        }
+        if curL2 != nil {
+            curr.next = curL2
+        }
+        return head.next
+    }
+
 //  helper function to create a linked list from array of ints
     func array2List(_ arry: [Int]) -> ListNode? {
         var head : ListNode?
@@ -120,10 +167,17 @@ class MergeTwoSortedLists {
     }
     
     func test() {
+        runTestCases("mergeTwoLists", withMergeFn: mergeTwoLists)
+        runTestCases("mergeTwoLists_12ms", withMergeFn: mergeTwoLists_12ms)
+        runTestCases("mergeTwoLists_16ms", withMergeFn: mergeTwoLists_16ms)
+    }
+    
+    func runTestCases(_ fnName : String, withMergeFn mergeFn : MergeFunction) {
+        print("Merge Function: \(fnName)")
         var l1,l2 : ListNode?
         var merged : ListNode?
         var idx = 1
-
+        
         l1 = self.array2List([])
         l2 = self.array2List([])
         merged = self.mergeTwoLists(l1, l2)
@@ -134,18 +188,18 @@ class MergeTwoSortedLists {
         l2 = self.array2List([])
         merged = self.mergeTwoLists(l1, l2)
         self.pass(idx, self.compareNodeArray(merged, arry: [1]))
-
+        
         idx += 1
         l1 = self.array2List([])
         l2 = self.array2List([1])
         self.pass(idx, self.compareNodeArray(merged, arry: [1]))
-
+        
         idx += 1
         l1 = self.array2List([1])
         l2 = self.array2List([2])
         merged = self.mergeTwoLists(l1, l2)
         self.pass(idx, self.compareNodeArray(merged, arry: [1,2]))
-  
+        
         idx += 1
         l1 = self.array2List([1,3])
         l2 = self.array2List([2])
@@ -163,11 +217,12 @@ class MergeTwoSortedLists {
         l2 = self.array2List([2,4,6])
         merged = self.mergeTwoLists(l1, l2)
         self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7]))
-
+        
         idx += 1
         l1 = self.array2List([2,4,6])
         l2 = self.array2List([1,3,5,7])
         merged = self.mergeTwoLists(l1, l2)
         self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7]))
+        
     }
 }
