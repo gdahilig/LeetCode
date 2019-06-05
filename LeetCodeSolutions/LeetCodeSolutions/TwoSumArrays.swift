@@ -10,7 +10,7 @@ import Foundation
 
 // https://leetcode.com/problems/two-sum/
 
-class Solution {
+class ToSum : Solution {
     
     func twoSum_brute_force(_ nums: [Int], _ target: Int) -> [Int] {
         for x in 0..<nums.count {
@@ -51,9 +51,10 @@ class Solution {
     
     var pass : Bool
     
-    init() {
+    override init() {
         self.pass = false
     }
+    
     func printResult(_ pass : Bool) {
         if (pass) {
             print("Test PASSED!")

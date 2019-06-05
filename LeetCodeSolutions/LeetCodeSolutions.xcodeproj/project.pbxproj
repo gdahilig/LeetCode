@@ -10,6 +10,9 @@
 		13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8A9F22A6D4AF00A42F9D /* main.swift */; };
 		13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */; };
 		13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */; };
+		13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */; };
+		13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */; };
+		13BA8AAF22A7C4EB00A42F9D /* SolutionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAE22A7C4EB00A42F9D /* SolutionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		13BA8A9F22A6D4AF00A42F9D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumArrays.swift; sourceTree = "<group>"; };
+		13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumber.swift; sourceTree = "<group>"; };
+		13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionBase.swift; sourceTree = "<group>"; };
+		13BA8AAE22A7C4EB00A42F9D /* SolutionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				13BA8A9F22A6D4AF00A42F9D /* main.swift */,
 				13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */,
 				13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */,
+				13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */,
+				13BA8AAE22A7C4EB00A42F9D /* SolutionProtocol.swift */,
+				13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */,
 			);
 			path = LeetCodeSolutions;
 			sourceTree = "<group>";
@@ -125,9 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BA8AAF22A7C4EB00A42F9D /* SolutionProtocol.swift in Sources */,
 				13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */,
+				13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */,
 				13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */,
 				13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */,
+				13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

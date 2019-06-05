@@ -19,7 +19,7 @@ public class ListNode {
 }
 typealias MergeFunction = (_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
 
-class MergeTwoSortedLists {
+class MergeTwoSortedLists : Solution, SolutionProtocol {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         guard l1 != nil else {
             return l2
@@ -74,13 +74,13 @@ class MergeTwoSortedLists {
     
     // LeetCode solution with 122s execution time
     func mergeTwoLists_16ms(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        var head = ListNode(0)
+        let head = ListNode(0)
         var curL1 = l1
         var curL2 = l2
         var curr = head
         while curL1 != nil || curL2 != nil {
-            var num1 = curL1?.val ?? Int.max
-            var num2 = curL2?.val ?? Int.max
+            let num1 = curL1?.val ?? Int.max
+            let num2 = curL2?.val ?? Int.max
             if num1 < num2 {
                 curr.next = ListNode(num1)
                 curL1 = curL1?.next
@@ -156,14 +156,6 @@ class MergeTwoSortedLists {
     }
     func compareNodeArray (_ node: ListNode?, arry : [Int]) -> Bool {
         return self.list2Array(node) == arry
-    }
-    
-    func pass(_ idx: Int, _ didPass : Bool) {
-        if didPass {
-            print("Test #\(idx) PASSED!")
-        } else {
-            print("Test #\(idx) FAILED!")
-        }
     }
     
     func test() {
