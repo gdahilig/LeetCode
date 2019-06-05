@@ -8,9 +8,22 @@
 
 import Foundation
 
-class ValidNumber : Solution, SolutionProtocol {
-    
-    func test() {
+class ValidNumber : Solution {
+    func isNumber(_ s: String) -> Bool {
+        return false
+    }
+ 
+   override func test() -> Bool {
 
+        var passAll = false
+        var result : Bool
+        var expected : Bool
+        
+        expected = false
+        result = self.isNumber(" ")
+        passAll = passAll && (result == expected)
+        
+        self.pass(passAll)
+        return passAll
     }
 }

@@ -7,6 +7,21 @@
 //
 
 import Foundation
+protocol NameDescribable {
+    var typeName: String { get }
+    static var typeName: String { get }
+}
+
+
+extension NameDescribable {
+    var typeName: String {
+        return String(describing: type(of: self))
+    }
+    
+    static var typeName: String {
+        return String(describing: self)
+    }
+}
 
 class Solution {
     func pass(_ idx: Int, _ didPass : Bool) {
@@ -16,4 +31,29 @@ class Solution {
             print("Test #\(idx) FAILED!")
         }
     }
+
+    func pass(_ didPass : Bool) {
+        if didPass {
+            print("Test PASSED!")
+        } else {
+            print("Test FAILED!")
+        }
+    }
+
+    func runTests() {
+        self.printTestBanner()
+        self.test()
+    }
+    
+    func test() -> Bool {
+        // subclass should override.
+        return false
+    }
+    func printTestBanner() {
+        print("------------------------------")
+        print("Testing: \(self.typeName)")
+        print("------------------------------")
+    }
 }
+
+extension Solution: NameDescribable {}

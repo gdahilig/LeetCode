@@ -19,7 +19,7 @@ public class ListNode {
 }
 typealias MergeFunction = (_ l1: ListNode?, _ l2: ListNode?) -> ListNode?
 
-class MergeTwoSortedLists : Solution, SolutionProtocol {
+class MergeTwoSortedLists : Solution {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         guard l1 != nil else {
             return l2
@@ -158,13 +158,30 @@ class MergeTwoSortedLists : Solution, SolutionProtocol {
         return self.list2Array(node) == arry
     }
     
-    func test() {
-        runTestCases("mergeTwoLists", withMergeFn: mergeTwoLists)
-        runTestCases("mergeTwoLists_12ms", withMergeFn: mergeTwoLists_12ms)
-        runTestCases("mergeTwoLists_16ms", withMergeFn: mergeTwoLists_16ms)
+    override func test() -> Bool {
+
+        var result = false
+        result = runTestCases("mergeTwoLists", withMergeFn: mergeTwoLists)
+        if result == false {
+            return false
+        }
+        
+        result = runTestCases("mergeTwoLists_12ms", withMergeFn: mergeTwoLists_12ms)
+        if result == false {
+            return false
+        }
+        
+        result = runTestCases("mergeTwoLists_16ms", withMergeFn: mergeTwoLists_16ms)
+        if result == false {
+            return false
+        }
+        return true
     }
     
-    func runTestCases(_ fnName : String, withMergeFn mergeFn : MergeFunction) {
+    func runTestCases(_ fnName : String, withMergeFn mergeFn : MergeFunction) -> Bool {
+        var passAll = true
+        var passTest = false
+        
         print("Merge Function: \(fnName)")
         var l1,l2 : ListNode?
         var merged : ListNode?
@@ -173,48 +190,65 @@ class MergeTwoSortedLists : Solution, SolutionProtocol {
         l1 = self.array2List([])
         l2 = self.array2List([])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, merged == nil)
+        passTest = merged == nil
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
         
         idx += 1
         l1 = self.array2List([1])
         l2 = self.array2List([])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1]))
+        passTest = self.compareNodeArray(merged, arry: [1])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
         
         idx += 1
         l1 = self.array2List([])
         l2 = self.array2List([1])
-        self.pass(idx, self.compareNodeArray(merged, arry: [1]))
-        
+        passTest = self.compareNodeArray(merged, arry: [1])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
+
         idx += 1
         l1 = self.array2List([1])
         l2 = self.array2List([2])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1,2]))
+        passTest = self.compareNodeArray(merged, arry: [1,2])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
         
         idx += 1
         l1 = self.array2List([1,3])
         l2 = self.array2List([2])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3]))
+        passTest = self.compareNodeArray(merged, arry: [1,2,3])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
         
         idx += 1
         l1 = self.array2List([2])
         l2 = self.array2List([1,3])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3]))
-        
+        passTest = self.compareNodeArray(merged, arry: [1,2,3])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
+
         idx += 1
         l1 = self.array2List([1,3,5,7])
         l2 = self.array2List([2,4,6])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7]))
-        
+        passTest = self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
+
         idx += 1
         l1 = self.array2List([2,4,6])
         l2 = self.array2List([1,3,5,7])
         merged = self.mergeTwoLists(l1, l2)
-        self.pass(idx, self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7]))
-        
+        passTest = self.compareNodeArray(merged, arry: [1,2,3,4,5,6,7])
+        self.pass(idx, passTest)
+        passAll = passAll && passTest
+
+        return passAll
     }
 }

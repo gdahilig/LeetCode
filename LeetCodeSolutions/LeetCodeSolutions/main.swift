@@ -8,8 +8,7 @@
 
 import Foundation
 
-let solution = MergeTwoSortedLists()
-solution.test()
-
-
+_ = TwoSum().runTests()
+_ = MergeTwoSortedLists().runTests()
+_ = ValidNumber().runTests()
 
