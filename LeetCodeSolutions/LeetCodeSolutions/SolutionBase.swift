@@ -54,6 +54,13 @@ class Solution {
         print("Testing: \(self.typeName)")
         print("------------------------------")
     }
+    func printTestCaseResult(_ name : String, _ didPass : Bool) {
+        if didPass {
+            print("Testcase \"\(name)\" PASSED!")
+        } else {
+            print("Testcase \"\(name)\"  FAILED!")
+        }
+    }
 }
 
 extension Solution: NameDescribable {}
