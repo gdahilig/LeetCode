@@ -28,7 +28,7 @@ class Solution {
         if didPass {
             print("Test #\(idx) PASSED!")
         } else {
-            print("Test #\(idx) FAILED!")
+            print("Test #\(idx) <================== FAILED!")
         }
     }
 
@@ -58,7 +58,7 @@ class Solution {
         if didPass {
             print("Testcase \"\(name)\" PASSED!")
         } else {
-            print("Testcase \"\(name)\"  FAILED!")
+            print("Testcase \"\(name)\"  <==================== FAILED!")
         }
     }
 }

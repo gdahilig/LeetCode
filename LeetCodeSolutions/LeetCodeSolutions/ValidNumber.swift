@@ -17,7 +17,10 @@ class ValidNumber : Solution {
             case ProcessDigits1
             case ProcessDigits2
             case ProcessDigits3
-            case ProcessDecimal
+            case ProcessDecimal1
+            case ProcessDecimal2
+            case ProcessSign1
+            case ProcessSign2
             case ProcessExp
             case End
         }
@@ -28,23 +31,27 @@ class ValidNumber : Solution {
             switch state {
             case .Start:
                 switch ch {
-                case "+","-","0"..."9":
+                case "0"..."9":
                     state = .ProcessDigits1
+                case "+","-":
+                    state = .ProcessSign1
                 case " ":
                     state = .ProcessWhiteSpace1
                 case ".":
-                    state = .ProcessDecimal
+                    state = .ProcessDecimal1
                 default:
                     return false
                 }
             case .ProcessWhiteSpace1:
                 switch ch {
-                case "+","-","0"..."9":
+                case "+","-":
+                    state = .ProcessSign1
+                case "0"..."9":
                     state = .ProcessDigits1
                 case " ":
                     state = .ProcessWhiteSpace1
                 case ".":
-                    state = .ProcessDecimal
+                    state = .ProcessDecimal1
                 default:
                     return false
                 }
@@ -61,7 +68,7 @@ class ValidNumber : Solution {
                 case "0"..."9":
                     state = .ProcessDigits1
                 case ".":
-                    state = .ProcessDecimal
+                    state = .ProcessDecimal2
                 case "e":
                     state = .ProcessExp
                 case " ":
@@ -83,7 +90,7 @@ class ValidNumber : Solution {
             case .ProcessDigits3:
                 switch ch {
                 case "0"..."9":
-                    state = .ProcessDigits2
+                    state = .ProcessDigits3
                 case " ":
                     state = .ProcessWhiteSpace2
                 default:
@@ -91,15 +98,44 @@ class ValidNumber : Solution {
                 }
             case .ProcessExp:
                 switch ch {
-                case "0"..."9", "-":
+                case "0"..."9":
                     state = .ProcessDigits3
+                case "-","+":
+                    state = .ProcessSign2
                 default:
                     return false
                 }
-            case .ProcessDecimal:
+            case .ProcessDecimal1:
+                switch ch {
+                case "0"..."9":
+                    state = .ProcessDecimal2
+                default:
+                    return false
+                }
+            case .ProcessDecimal2:
                 switch ch {
                 case "0"..."9":
                     state = .ProcessDigits2
+                case " ":
+                    state = .ProcessWhiteSpace2
+                case "e":
+                    state = .ProcessExp
+                default:
+                    return false
+                }
+            case .ProcessSign1:
+                switch ch {
+                case "0"..."9":
+                    state = .ProcessDigits1
+                case ".":
+                    state = .ProcessDecimal1
+                default:
+                    return false
+                }
+            case .ProcessSign2:
+                switch ch {
+                case "0"..."9":
+                    state = .ProcessDigits3
                 default:
                     return false
                 }
@@ -108,6 +144,7 @@ class ValidNumber : Solution {
             }
         }
         return state == .ProcessWhiteSpace2 ||
+               state == .ProcessDecimal2    ||
                state == .ProcessDigits1     ||
                state == .ProcessDigits2     ||
                state == .ProcessDigits3
@@ -165,7 +202,12 @@ class ValidNumber : Solution {
 
         result = self.runTestCase( " +", false)
         result = self.runTestCase( " -", false)
-
+        result = self.runTestCase( "3.", true)
+        result = self.runTestCase( "3. ", true)
+        result = self.runTestCase( "+.8", true)
+        result = self.runTestCase( "46.e3", true)
+        result = self.runTestCase( "92e1740e91", false)
+        result = self.runTestCase( " 005047e+6", true)
         
         result = self.runTestCase( ".", false)
         result = self.runTestCase( " .", false)
