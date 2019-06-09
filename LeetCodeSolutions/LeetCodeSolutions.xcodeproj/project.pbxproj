@@ -12,6 +12,7 @@
 		13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */; };
 		13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */; };
 		13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */; };
+		B5AC15D522AC5FFA00B157EA /* LevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumArrays.swift; sourceTree = "<group>"; };
 		13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumber.swift; sourceTree = "<group>"; };
 		13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionBase.swift; sourceTree = "<group>"; };
+		B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +68,29 @@
 			isa = PBXGroup;
 			children = (
 				13BA8A9F22A6D4AF00A42F9D /* main.swift */,
+				13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */,
+				B5AC15D722AC603900B157EA /* Arrays and Strings */,
+				B5AC15D622AC600600B157EA /* Trees and Graphs */,
+			);
+			path = LeetCodeSolutions;
+			sourceTree = "<group>";
+		};
+		B5AC15D622AC600600B157EA /* Trees and Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */,
+			);
+			path = "Trees and Graphs";
+			sourceTree = "<group>";
+		};
+		B5AC15D722AC603900B157EA /* Arrays and Strings */ = {
+			isa = PBXGroup;
+			children = (
 				13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */,
 				13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */,
 				13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */,
-				13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */,
 			);
-			path = LeetCodeSolutions;
+			path = "Arrays and Strings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +153,7 @@
 				13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */,
 				13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */,
 				13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */,
+				B5AC15D522AC5FFA00B157EA /* LevelOrder.swift in Sources */,
 				13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */,
 				13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */,
 			);
