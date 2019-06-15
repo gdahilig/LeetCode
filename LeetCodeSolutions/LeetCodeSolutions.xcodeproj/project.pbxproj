@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1383E17222AEEDB200A37C62 /* MaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17122AEEDB200A37C62 /* MaxDepth.swift */; };
+		1383E17422AF162800A37C62 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17322AF162800A37C62 /* WordLadder.swift */; };
 		13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8A9F22A6D4AF00A42F9D /* main.swift */; };
 		13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */; };
 		13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		1383E17122AEEDB200A37C62 /* MaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDepth.swift; sourceTree = "<group>"; };
+		1383E17322AF162800A37C62 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		13BA8A9C22A6D4AF00A42F9D /* LeetCodeSolutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeSolutions; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BA8A9F22A6D4AF00A42F9D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */,
 				1383E17122AEEDB200A37C62 /* MaxDepth.swift */,
+				1383E17322AF162800A37C62 /* WordLadder.swift */,
 			);
 			path = "Trees and Graphs";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */,
 				13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */,
 				13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */,
+				1383E17422AF162800A37C62 /* WordLadder.swift in Sources */,
 				B5AC15D522AC5FFA00B157EA /* LevelOrder.swift in Sources */,
 				13BA8AA922A722C500A42F9D /* TwoSumArrays.swift in Sources */,
 				1383E17222AEEDB200A37C62 /* MaxDepth.swift in Sources */,
