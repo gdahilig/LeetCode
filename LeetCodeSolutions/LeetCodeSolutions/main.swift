@@ -8,9 +8,11 @@
 
 import Foundation
 
-_ = TwoSum().runTests()
-_ = MergeTwoSortedLists().runTests()
-_ = ValidNumber().runTests()
-_ = LevelOrder().runTests()
-_ = MaxDepth().runTests()
-_ = WordLadder().runTests()
+//_ = TwoSum().runTests()
+//_ = MergeTwoSortedLists().runTests()
+//_ = ValidNumber().runTests()
+//_ = LevelOrder().runTests()
+//_ = MaxDepth().runTests()
+//_ = WordLadder().runTests()
+_ = Virtual_SumDigitsMinNum().runTests()
+_ = Virtual_BraceExpansion().runTests()

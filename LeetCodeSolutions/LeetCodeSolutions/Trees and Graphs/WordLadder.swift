@@ -13,7 +13,7 @@ import Foundation
 
 class WordLadder : Solution {
     func getOneCharOff(_ word1 : String, _ word2 : String) -> Bool {
-        
+        // Given two words, returns true number of matching letters is size - matching chars == 1
         // count similar letters.
         var count : Int = 0
         for idx in 0...word1.count-1 {
@@ -26,6 +26,10 @@ class WordLadder : Solution {
             }
         }
         return count == word1.count-1
+    }
+    
+    func wordGraph () {
+        
     }
     
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
