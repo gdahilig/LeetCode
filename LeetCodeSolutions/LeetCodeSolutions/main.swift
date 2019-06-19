@@ -18,5 +18,5 @@ import Foundation
 
 // In-progress
 //_ = Virtual_SumDigitsMinNum().runTests()
-//_ = Virtual_BraceExpansion().runTests()
-_ = AddTwoNumbers().runTests()
+_ = Virtual_BraceExpansion().runTests()
+//_ = AddTwoNumbers().runTests()
