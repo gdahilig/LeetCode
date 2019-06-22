@@ -17,7 +17,6 @@
 		13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */; };
 		13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */; };
 		B569E97122B695D7001EAFB2 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569E97022B695D7001EAFB2 /* AddTwoNumbers.swift */; };
-		B569E9C522BBC868001EAFB2 /* combos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569E9C422BBC868001EAFB2 /* combos.swift */; };
 		B5AC15D522AC5FFA00B157EA /* LevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumber.swift; sourceTree = "<group>"; };
 		13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionBase.swift; sourceTree = "<group>"; };
 		B569E97022B695D7001EAFB2 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
-		B569E9C422BBC868001EAFB2 /* combos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combos.swift; sourceTree = "<group>"; };
 		B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +70,6 @@
 		13BA8A9322A6D4AF00A42F9D = {
 			isa = PBXGroup;
 			children = (
-				B569E9C422BBC868001EAFB2 /* combos.swift */,
 				13BA8A9E22A6D4AF00A42F9D /* LeetCodeSolutions */,
 				13BA8A9D22A6D4AF00A42F9D /* Products */,
 			);
@@ -194,7 +191,6 @@
 				1383E17222AEEDB200A37C62 /* MaxDepth.swift in Sources */,
 				139D5EF522B5DC5800189993 /* Virtual_SumDigitsMinNum.swift in Sources */,
 				13BA8AAD22A7C39500A42F9D /* SolutionBase.swift in Sources */,
-				B569E9C522BBC868001EAFB2 /* combos.swift in Sources */,
 				B569E97122B695D7001EAFB2 /* AddTwoNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
