@@ -22,16 +22,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
-            timestampString = "582598230.277514"
+            timestampString = "582931183.1277829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "test_createCombos()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "createOptions(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.128546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "test_createOptions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.129185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "test_createOptions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.129864"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "test_generateCombos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.130456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "test_generateCombos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.131094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "generateExpansions(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LeetCodeSolutions.Virtual_BraceExpansion.generateExpansions(Swift.Array&lt;Swift.Array&lt;Swift.Character&gt;&gt;, Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "LeetCodeSolutions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geno/Github/LeetCode/LeetCodeSolutions/LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+                  timestampString = "582921710.9889621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "2991">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LeetCodeSolutions.Virtual_BraceExpansion.generateExpansions(Swift.Array&lt;Swift.Array&lt;Swift.Character&gt;&gt;, Swift.String) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "LeetCodeSolutions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geno/Github/LeetCode/LeetCodeSolutions/LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+                  timestampString = "582921710.990795"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "3017">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
+            timestampString = "582931183.13164"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "generateExpansions(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,28 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
-            timestampString = "582598230.277855"
+            timestampString = "582931183.1321419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "createCombos(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LeetCodeSolutions/Virtual/Virtual_BraceExpansion.swift"
-            timestampString = "582598230.2781039"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "createCombos(_:)"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "test_Solution()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
