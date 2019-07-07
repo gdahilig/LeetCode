@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1359513322C586C00051402D /* LongestSubstringWithoutRepeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */; };
+		137980CD22D2A60E002BD2BE /* RLEIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137980CC22D2A60E002BD2BE /* RLEIterator.swift */; };
 		1383E17222AEEDB200A37C62 /* MaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17122AEEDB200A37C62 /* MaxDepth.swift */; };
 		1383E17422AF162800A37C62 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17322AF162800A37C62 /* WordLadder.swift */; };
 		139D5EF522B5DC5800189993 /* Virtual_SumDigitsMinNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF422B5DC5800189993 /* Virtual_SumDigitsMinNum.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeats.swift; sourceTree = "<group>"; };
+		137980CC22D2A60E002BD2BE /* RLEIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLEIterator.swift; sourceTree = "<group>"; };
 		1383E17122AEEDB200A37C62 /* MaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDepth.swift; sourceTree = "<group>"; };
 		1383E17322AF162800A37C62 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		139D5EF422B5DC5800189993 /* Virtual_SumDigitsMinNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_SumDigitsMinNum.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */,
 				13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */,
 				1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */,
+				137980CC22D2A60E002BD2BE /* RLEIterator.swift */,
 			);
 			path = "Arrays and Strings";
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				13BA8AA722A7164700A42F9D /* MergeTwoSortedLists.swift in Sources */,
 				13BA8AAB22A7C36C00A42F9D /* ValidNumber.swift in Sources */,
 				13BA8AA022A6D4AF00A42F9D /* main.swift in Sources */,
+				137980CD22D2A60E002BD2BE /* RLEIterator.swift in Sources */,
 				1383E17422AF162800A37C62 /* WordLadder.swift in Sources */,
 				1359513322C586C00051402D /* LongestSubstringWithoutRepeats.swift in Sources */,
 				B5AC15D522AC5FFA00B157EA /* LevelOrder.swift in Sources */,
