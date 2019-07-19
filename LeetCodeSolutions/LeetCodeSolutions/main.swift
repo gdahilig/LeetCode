@@ -15,7 +15,7 @@ import Foundation
 //_ = ValidNumber().runTests()
 //_ = LevelOrder().runTests()
 //_ = MaxDepth().runTests()
-//_ = WordLadder().runTests()
+_ = WordLadder().runTests()
 //_ = Virtual_BraceExpansion().runTests()
 //_ = LongestSubstringWithoutRepeats().runTests()
 
