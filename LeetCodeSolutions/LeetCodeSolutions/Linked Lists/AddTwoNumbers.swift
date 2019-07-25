@@ -5,6 +5,7 @@
 //  Created by Gene Dahilig on 6/16/19.
 //  Copyright © 2019 Gene Dahilig. All rights reserved.
 //
+// LeetCode: https://leetcode.com/problems/add-two-numbers/
 
 import Foundation
 
@@ -57,8 +58,6 @@ class AddTwoNumbers : Solution {
             } else {
                 result!.next = node1
             }
-            
-            
         }
         
         
@@ -91,9 +90,6 @@ class AddTwoNumbers : Solution {
                 node1 = node1!.next
                 node2 = node2!.next
             }
-            
-            
-            
         }
         
         return node1 != nil && node2 != nil

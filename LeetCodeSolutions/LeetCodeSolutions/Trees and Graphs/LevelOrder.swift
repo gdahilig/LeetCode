@@ -163,27 +163,6 @@ class LevelOrder : Solution {
         var expected : [[Int]]
         var result : [[Int]]
 
-        (root, expected) = buildTree_NIL()
-        result = levelOrder(root)
-        printTestCaseResult("BuildTree_NIL", result == expected)
-        
-        (root,expected) = buildTree_01()
-        result = levelOrder(root)
-        printTestCaseResult("BuildTree_01", result == expected)
-
-        (root, expected) = buildTree_02()
-        result = levelOrder(root)
-        printTestCaseResult("BuildTree_02", result == expected)
-
-
-        (root, expected) = buildTree_03()
-        result = levelOrder(root)
-        printTestCaseResult("BuildTree_03", result == expected)
-
-        (root,expected) = buildTree_04()
-        result = levelOrder(root)
-        printTestCaseResult("BuildTree_04", result == expected)
-
         
         (root,expected) = buildTree_05()
         result = levelOrder(root)

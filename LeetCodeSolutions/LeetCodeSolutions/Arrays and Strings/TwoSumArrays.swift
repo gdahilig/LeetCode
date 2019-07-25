@@ -48,41 +48,4 @@ class TwoSum : Solution {
         }
         return []
     }
-    
-    var pass : Bool
-    
-    override init() {
-        self.pass = false
-    }
-    
-    func printResult(_ pass : Bool) {
-        if (pass) {
-            print("Test PASSED!")
-        } else {
-            print("Test FAILED!")
-        }
-    }
-    
-    override func test () -> Bool{
-        var expected = [1,2]
-        pass = self.twoSum_One_Pass_Hash([3,2,4], 6) == expected
-        printResult(pass)
-        if !pass {
-            return false
-        }
-        expected = [2,3]
-        pass = self.twoSum_Two_Pass_Hash([3,2,4,6], 10) == expected
-        printResult(pass)
-        if !pass {
-            return false
-        }
-
-        expected = [0,2]
-        pass = self.twoSum_Two_Pass_Hash([3, 2, 42, 8, 4,6], 45) == expected
-        printResult(pass)
-        if !pass {
-            return false
-        }
-        return true
-    }
 }

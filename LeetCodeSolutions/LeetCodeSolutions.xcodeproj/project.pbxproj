@@ -7,10 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1331B0D722E2863F00812D83 /* Test_TwoSumArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331B0D622E2863F00812D83 /* Test_TwoSumArrays.swift */; };
+		1331B0D822E286D500812D83 /* TwoSumArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA822A722C500A42F9D /* TwoSumArrays.swift */; };
+		1331B0D922E2876400812D83 /* SolutionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAC22A7C39500A42F9D /* SolutionBase.swift */; };
+		1331B0DB22E2970200812D83 /* Test_MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331B0DA22E2970200812D83 /* Test_MergeTwoSortedLists.swift */; };
+		1331B0DC22E2972700812D83 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AA622A7164700A42F9D /* MergeTwoSortedLists.swift */; };
+		1331B0DD22E2972A00812D83 /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA8AAA22A7C36C00A42F9D /* ValidNumber.swift */; };
+		1331B0DE22E2972D00812D83 /* LongestSubstringWithoutRepeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */; };
+		1331B0DF22E2973000812D83 /* RLEIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137980CC22D2A60E002BD2BE /* RLEIterator.swift */; };
+		1331B0E022E2973300812D83 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569E97022B695D7001EAFB2 /* AddTwoNumbers.swift */; };
+		1331B0E122E2973600812D83 /* LevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC15D422AC5FFA00B157EA /* LevelOrder.swift */; };
+		1331B0E222E2973900812D83 /* MaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17122AEEDB200A37C62 /* MaxDepth.swift */; };
+		1331B0E322E2973C00812D83 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17322AF162800A37C62 /* WordLadder.swift */; };
+		1331B0E422E2974000812D83 /* Virtual_BraceExpansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF622B5E46E00189993 /* Virtual_BraceExpansion.swift */; };
+		1331B0E522E2974300812D83 /* Virtual_SumDigitsMinNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF422B5DC5800189993 /* Virtual_SumDigitsMinNum.swift */; };
+		1331B0E722E29CA900812D83 /* Test_ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331B0E622E29CA900812D83 /* Test_ValidNumber.swift */; };
+		1331B0E922E3DCA700812D83 /* Test_LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331B0E822E3DCA700812D83 /* Test_LongestSubstring.swift */; };
 		1359513322C586C00051402D /* LongestSubstringWithoutRepeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */; };
 		137980CD22D2A60E002BD2BE /* RLEIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137980CC22D2A60E002BD2BE /* RLEIterator.swift */; };
 		1383E17222AEEDB200A37C62 /* MaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17122AEEDB200A37C62 /* MaxDepth.swift */; };
 		1383E17422AF162800A37C62 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383E17322AF162800A37C62 /* WordLadder.swift */; };
+		1391EA3922E4CE0100E404DB /* Test_RLEIterators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391EA3822E4CE0100E404DB /* Test_RLEIterators.swift */; };
+		1391EA3B22E4D2C600E404DB /* Test_LevelOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391EA3A22E4D2C600E404DB /* Test_LevelOrder.swift */; };
+		1391EA3D22E4D96E00E404DB /* Test_AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391EA3C22E4D96E00E404DB /* Test_AddTwoNumbers.swift */; };
 		139D5EF522B5DC5800189993 /* Virtual_SumDigitsMinNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF422B5DC5800189993 /* Virtual_SumDigitsMinNum.swift */; };
 		139D5EF722B5E46E00189993 /* Virtual_BraceExpansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF622B5E46E00189993 /* Virtual_BraceExpansion.swift */; };
 		139D5EFA22B7605A00189993 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D5EF922B7605A00189993 /* Fibonacci.swift */; };
@@ -36,10 +55,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1331B0CA22E284EB00812D83 /* UnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1331B0CE22E284EB00812D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1331B0D622E2863F00812D83 /* Test_TwoSumArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_TwoSumArrays.swift; sourceTree = "<group>"; };
+		1331B0DA22E2970200812D83 /* Test_MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_MergeTwoSortedLists.swift; sourceTree = "<group>"; };
+		1331B0E622E29CA900812D83 /* Test_ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_ValidNumber.swift; sourceTree = "<group>"; };
+		1331B0E822E3DCA700812D83 /* Test_LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_LongestSubstring.swift; sourceTree = "<group>"; };
 		1359513222C586C00051402D /* LongestSubstringWithoutRepeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeats.swift; sourceTree = "<group>"; };
 		137980CC22D2A60E002BD2BE /* RLEIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLEIterator.swift; sourceTree = "<group>"; };
 		1383E17122AEEDB200A37C62 /* MaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDepth.swift; sourceTree = "<group>"; };
 		1383E17322AF162800A37C62 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
+		1391EA3822E4CE0100E404DB /* Test_RLEIterators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_RLEIterators.swift; sourceTree = "<group>"; };
+		1391EA3A22E4D2C600E404DB /* Test_LevelOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_LevelOrder.swift; sourceTree = "<group>"; };
+		1391EA3C22E4D96E00E404DB /* Test_AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AddTwoNumbers.swift; sourceTree = "<group>"; };
 		139D5EF422B5DC5800189993 /* Virtual_SumDigitsMinNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_SumDigitsMinNum.swift; sourceTree = "<group>"; };
 		139D5EF622B5E46E00189993 /* Virtual_BraceExpansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_BraceExpansion.swift; sourceTree = "<group>"; };
 		139D5EF922B7605A00189993 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
@@ -54,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1331B0C722E284EB00812D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13BA8A9922A6D4AF00A42F9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1331B0CB22E284EB00812D83 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				1331B0CE22E284EB00812D83 /* Info.plist */,
+				1331B0D622E2863F00812D83 /* Test_TwoSumArrays.swift */,
+				1331B0DA22E2970200812D83 /* Test_MergeTwoSortedLists.swift */,
+				1331B0E622E29CA900812D83 /* Test_ValidNumber.swift */,
+				1331B0E822E3DCA700812D83 /* Test_LongestSubstring.swift */,
+				1391EA3822E4CE0100E404DB /* Test_RLEIterators.swift */,
+				1391EA3A22E4D2C600E404DB /* Test_LevelOrder.swift */,
+				1391EA3C22E4D96E00E404DB /* Test_AddTwoNumbers.swift */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
 		139D5EF822B5E47A00189993 /* Virtual */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				13BA8A9E22A6D4AF00A42F9D /* LeetCodeSolutions */,
+				1331B0CB22E284EB00812D83 /* UnitTest */,
 				13BA8A9D22A6D4AF00A42F9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				13BA8A9C22A6D4AF00A42F9D /* LeetCodeSolutions */,
+				1331B0CA22E284EB00812D83 /* UnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +188,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1331B0C922E284EB00812D83 /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1331B0D122E284EB00812D83 /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				1331B0C622E284EB00812D83 /* Sources */,
+				1331B0C722E284EB00812D83 /* Frameworks */,
+				1331B0C822E284EB00812D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 1331B0CA22E284EB00812D83 /* UnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		13BA8A9B22A6D4AF00A42F9D /* LeetCodeSolutions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13BA8AA322A6D4AF00A42F9D /* Build configuration list for PBXNativeTarget "LeetCodeSolutions" */;
@@ -163,6 +232,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Gene Dahilig";
 				TargetAttributes = {
+					1331B0C922E284EB00812D83 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					13BA8A9B22A6D4AF00A42F9D = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -181,11 +253,48 @@
 			projectRoot = "";
 			targets = (
 				13BA8A9B22A6D4AF00A42F9D /* LeetCodeSolutions */,
+				1331B0C922E284EB00812D83 /* UnitTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1331B0C822E284EB00812D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1331B0C622E284EB00812D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1331B0D722E2863F00812D83 /* Test_TwoSumArrays.swift in Sources */,
+				1331B0DB22E2970200812D83 /* Test_MergeTwoSortedLists.swift in Sources */,
+				1331B0E722E29CA900812D83 /* Test_ValidNumber.swift in Sources */,
+				1331B0DD22E2972A00812D83 /* ValidNumber.swift in Sources */,
+				1331B0D922E2876400812D83 /* SolutionBase.swift in Sources */,
+				1391EA3B22E4D2C600E404DB /* Test_LevelOrder.swift in Sources */,
+				1331B0DE22E2972D00812D83 /* LongestSubstringWithoutRepeats.swift in Sources */,
+				1331B0E022E2973300812D83 /* AddTwoNumbers.swift in Sources */,
+				1331B0DF22E2973000812D83 /* RLEIterator.swift in Sources */,
+				1331B0E522E2974300812D83 /* Virtual_SumDigitsMinNum.swift in Sources */,
+				1331B0E922E3DCA700812D83 /* Test_LongestSubstring.swift in Sources */,
+				1331B0E122E2973600812D83 /* LevelOrder.swift in Sources */,
+				1331B0E222E2973900812D83 /* MaxDepth.swift in Sources */,
+				1391EA3D22E4D96E00E404DB /* Test_AddTwoNumbers.swift in Sources */,
+				1331B0E322E2973C00812D83 /* WordLadder.swift in Sources */,
+				1331B0DC22E2972700812D83 /* MergeTwoSortedLists.swift in Sources */,
+				1331B0D822E286D500812D83 /* TwoSumArrays.swift in Sources */,
+				1391EA3922E4CE0100E404DB /* Test_RLEIterators.swift in Sources */,
+				1331B0E422E2974000812D83 /* Virtual_BraceExpansion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13BA8A9822A6D4AF00A42F9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +319,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1331B0CF22E284EB00812D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FN9CVFANRG;
+				INFOPLIST_FILE = UnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutensil.UnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1331B0D022E284EB00812D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FN9CVFANRG;
+				INFOPLIST_FILE = UnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutensil.UnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		13BA8AA122A6D4AF00A42F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,6 +493,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1331B0D122E284EB00812D83 /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1331B0CF22E284EB00812D83 /* Debug */,
+				1331B0D022E284EB00812D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		13BA8A9722A6D4AF00A42F9D /* Build configuration list for PBXProject "LeetCodeSolutions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
